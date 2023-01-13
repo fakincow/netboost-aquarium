@@ -121,8 +121,8 @@ export class AquariumComponent implements OnDestroy, OnInit {
 
 
     this.flipFish();
-    this.position.x += (this.xdirection * 5);
-    this.position.y += (this.ydirection * 5);
+    this.position.x += (this.xdirection * 4);
+    this.position.y += (this.ydirection * 4);
   }
   ngOnDestroy() {
     if (this.id) {

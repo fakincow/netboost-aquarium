@@ -1,16 +1,16 @@
-<div class="main">
+<div class="main" style="background-color: rgb(76, 74, 78);" cdkDropList (cdkDropListDropped)="drop($event)">
     <div class="container-top">
-        <div class={{selectedColor}} class="circle"></div>
-        <div class={{selectedColor}} class="circle"></div>
-        <div class={{selectedColor}} class="circle"></div>
+        <div class={{selectedColor}} class="circle">1</div>
+        <div class={{selectedColor}} class="circle">2</div>
+        <div class={{selectedColor}} class="circle">3</div>
     </div>
-    <div class="container">
-        <h1 class="font-size">CHOOSE COLOR</h1>
-        <button id="red" class={{redBtnClass}} (click)="onBtnSelect($event)" style="background-color: red;"
-            type="button">RED</button>
-        <button id="blue" class={{blueBtnClass}} (click)="onBtnSelect($event)" style="background-color: blue;"
-            type="button">BLUE</button>
-        <button id="green" class={{greenBtnClass}} (click)="onBtnSelect($event)" style="background-color: green;"
-            type="button">GREEN</button>
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)" >
+        <div class="example-box" *ngFor="let color of colors" cdkDrag>
+            <button id="green" class={{greenBtnClass}} (click)="onBtnSelect($event)" id={{color}} 
+                [ngStyle]="{'background-color': color}" type="button">
+                {{color}}</button>
+        </div>
     </div>
+
+
 </div>
