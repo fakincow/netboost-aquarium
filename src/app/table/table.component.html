@@ -1,0 +1,16 @@
+<div class="main">
+    <div class="container-top">
+        <div class={{selectedColor}} class="circle"></div>
+        <div class={{selectedColor}} class="circle"></div>
+        <div class={{selectedColor}} class="circle"></div>
+    </div>
+    <div class="container">
+        <h1 class="font-size">CHOOSE COLOR</h1>
+        <button id="red" class={{redBtnClass}} (click)="onBtnSelect($event)" style="background-color: red;"
+            type="button">RED</button>
+        <button id="blue" class={{blueBtnClass}} (click)="onBtnSelect($event)" style="background-color: blue;"
+            type="button">BLUE</button>
+        <button id="green" class={{greenBtnClass}} (click)="onBtnSelect($event)" style="background-color: green;"
+            type="button">GREEN</button>
+    </div>
+</div>

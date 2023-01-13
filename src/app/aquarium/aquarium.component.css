@@ -1,0 +1,66 @@
+.aqua-border {
+    width: 1000px;
+    height: 1000px;
+}
+
+.hitEffect {
+    border-style: solid;
+    border-color: rgb(116, 110, 227);
+    border-width: 20px;
+    width: 1000px;
+    height: 1000px;
+    animation: animHit 1.5s;
+    animation-iteration-count: 3;
+    border-color: rgb(41, 188, 233);
+}
+
+@keyframes animHit {
+    from {
+        border-color: rgb(130, 21, 21);
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.9);
+        border-color: red;
+        box-shadow: 5px 5px 5px 10px #2692c0;
+    }
+}
+
+.fish-wrapper {
+    position: absolute;
+}
+
+.green {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.red {
+    filter: invert(20%) sepia(79%) saturate(2476%) hue-rotate(0deg) brightness(118%) contrast(100%);
+}
+
+.blue {
+    filter: invert(15%) sepia(79%) saturate(2476%) hue-rotate(240deg) brightness(118%) contrast(119%);
+}
+
+.right {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.left {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.fishColorRed {
+    color: rgba(255, 255, 255, 0);
+}
+
+.fish {
+    animation: animMove 0.5s;
+    animation-iteration-count: 3;
+    border-width: 6px;
+    border-color: rgb(4, 61, 105);
+    border-style: solid;
+}

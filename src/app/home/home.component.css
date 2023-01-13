@@ -1,0 +1,17 @@
+.table {
+    background-color: rgb(110, 110, 223);
+    width: 1000px;
+    height: 1000px;
+}
+.aquarium{
+    background-image: linear-gradient(rgb(90, 204, 221), rgb(15, 120, 136));
+    width: 1200px;
+    height: 1000px;
+}
+.main{
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 10px;
+    width: 1500px;
+    height: 1000px;
+}

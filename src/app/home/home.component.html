@@ -1,0 +1,7 @@
+<div class="main">
+    <div class="flex text-center">
+            <app-aquarium class="aquarium"  [selectedColor] = selectedColor ></app-aquarium>
+            <app-table class="table" (onColorChanged)="onColorChanged($event)"></app-table>
+    </div>
+</div>
+
