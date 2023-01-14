@@ -15,7 +15,9 @@ export class TableComponent {
   ];
 
   drop(event: CdkDragDrop<string[]>) {
+    console.log('event.container', this.colors);
     moveItemInArray(this.colors, event.previousIndex, event.currentIndex);
+    console.log('event.container 22', this.colors);
   }
   selectedColor = 'grey';
   redBtnClass = 'redBtn';
@@ -43,14 +45,5 @@ export class TableComponent {
   ];
   MoviesWatched = [
   ];
-  onDrop(event: CdkDragDrop<string[]>) {
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else {
-      transferArrayItem(event.previousContainer.data,
-        event.container.data,
-        event.previousIndex,
-        event.currentIndex);
-    }
-  }  
+ 
 }

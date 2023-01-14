@@ -1,6 +1,8 @@
+
 <div class="{{container}}" #border [@borderHit]="collision ? 'blinking' : 'idle'">
     <div class="fish-wrapper" #fish [style.top.px]="position.y" [style.left.px]="position.x"
         [style.left.px]="position.x">
+        <img #bubble  class="bubbling" [style.left.px]="bubble_position.x" [style.top.px]="bubble_position.y" width=10 height=10 style="position: absolute;" src="../../assets/images/food-blue-bubble.svg">
         <img class={{fishClass}} src="../../assets/images/fish.svg">
     </div>
 </div>

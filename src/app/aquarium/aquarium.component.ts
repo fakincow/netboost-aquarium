@@ -38,7 +38,7 @@ import {
 export class AquariumComponent implements OnDestroy, OnInit {
   @Input() selectedColor: string = 'grey';
   position: { x: number, y: number } = { x: 200, y: 200 };
-
+  bubble_position: { x: number, y: number } = { x: 200, y: -200 };
   collision: boolean = false;
   xdirection: number = 0;
   ydirection: number = 0;
@@ -118,7 +118,6 @@ export class AquariumComponent implements OnDestroy, OnInit {
       this.container = 'hitEffect'
       this.collision = true;
     }
-
 
     this.flipFish();
     this.position.x += (this.xdirection * 4);

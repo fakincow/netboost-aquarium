@@ -6,12 +6,13 @@
     position: absolute;
     padding: 5px;
     border: 1px solid #aaaaaa;
+    cursor: move;
 }
 .aquarium{
     background-image: linear-gradient(rgb(90, 204, 221), rgb(15, 120, 136));
     width: 1200px;
     height: 1000px;
-    cursor: move;
+    
 
 }
 .main{
