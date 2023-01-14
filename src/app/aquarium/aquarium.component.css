@@ -31,13 +31,11 @@
 @keyframes animHit {
     from {
         border-color: rgb(130, 21, 21);
-        transform: scale(1);
     }
 
     to {
-        transform: scale(1.1);
         border-color: red;
-        box-shadow: 5px 5px 5px 10px #2692c0;
+        box-shadow: 5px 5px 5px 10px #97043a;
     }
 }
 
