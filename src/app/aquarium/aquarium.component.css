@@ -2,21 +2,23 @@
     width: 1000px;
     height: 1000px;
 }
+
 @keyframes animBubble {
     from {
-      transform: translateY(2000%)
+        transform: translateY(2000%)
     }
-  
+
     to {
-      transform: translateY(100%)
+        transform: translateY(100%)
     }
-  
-  }
+}
+
 .bubbling {
     animation: animBubble 2s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
+
 .hitEffect {
     border-style: solid;
     border-color: rgb(0, 56, 11);

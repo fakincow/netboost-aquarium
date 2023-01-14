@@ -57,7 +57,7 @@ export class AquariumComponent implements OnDestroy, OnInit {
     this.randomizeDirection();
     this.aiInterval = setInterval(() => {
       this.randomizeDirection();
-    }, 5000)
+    }, 3000)
   }
 
   randomizeDirection() {
@@ -110,9 +110,11 @@ export class AquariumComponent implements OnDestroy, OnInit {
     let collidedY = this.validateBorderHitAreaY();
     if (collidedX) {
       this.xdirection *= -1;
+      this.position.x += (this.xdirection * 10);
     }
     if (collidedY) {
       this.ydirection *= -1;
+      this.position.y += (this.ydirection * 10);
     }
     if (collidedX || collidedY) {
       this.container = 'hitEffect'
