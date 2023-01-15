@@ -1,5 +1,5 @@
 <div class="main" style="background-color: rgb(10, 0, 68);" cdkDropList (cdkDropListDropped)="drop($event)">
-    <div class="container-top">
+       <div class="container-top">
         <div class="example-box" *ngFor="let color of colors" cdkDrag>
             <div id="green" class="circle" [ngStyle]="{'background-color': color}" type="button">
             </div>
@@ -12,4 +12,6 @@
                 {{color}}</button>
         </div>
     </div>
+   
 </div>
+<button (click)="goCanvas()"  color="primary">Canvas</button>

@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-table',
@@ -8,6 +9,12 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 })
 export class TableComponent {
   @Output() onColorChanged = new EventEmitter<string>();
+  constructor(private router: Router ){
+
+  }
+  goCanvas(){
+    this.router.navigate([ '/canvas' ]);
+  }
   colors = [
     'RED',
     'BLUE',
