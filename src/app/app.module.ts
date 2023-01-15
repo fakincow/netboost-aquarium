@@ -8,18 +8,20 @@ import { HomeComponent } from './home/home.component';
 import { TableComponent } from './table/table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { CanvasComponent } from './canvas/canvas.component';
 @NgModule({
   declarations: [
     AppComponent,
     AquariumComponent,
     TableComponent,
-    HomeComponent
+    HomeComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DragDropModule
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
